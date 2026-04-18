@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Developer Portfolio</title>
+    <meta name="description" content="A stunning portfolio project with a built-in interactive to-do list.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Portfolio<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#todo">Todo App</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="glitch-text" data-text="John Doe">John Doe</h1>
+                <p class="role">Creative Web Developer & Designer</p>
+                <div class="hero-buttons">
+                    <a href="#todo" class="btn primary-btn">Try Todo App</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Glassmorphism decorative elements -->
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Profile" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-cards">
+                <div class="card glass-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, fast, and scalable web applications using modern technologies.</p>
+                </div>
+                <div class="card glass-card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating beautiful, intuitive interfaces with a focus on user experience and accessibility.</p>
+                </div>
+                <div class="card glass-card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Performance</h3>
+                    <p>Optimizing web pages for maximum speed and optimal performance across all devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="todo" class="todo-section">
+            <div class="section-header">
+                <h2>Task Manager</h2>
+                <div class="header-line"></div>
+                <p class="section-subtitle">A showcase of interactive JavaScript logic</p>
+            </div>
+            
+            <div class="todo-app glass-card">
+                <div class="todo-header">
+                    <h3>My Tasks</h3>
+                    <span id="task-count">0 tasks</span>
+                </div>
+                <div class="todo-input-container">
+                    <input type="text" id="todo-input" placeholder="What needs to be done?">
+                    <button id="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <ul id="todo-list" class="todo-list">
+                    <!-- Tasks will be added here dynamically -->
+                </ul>
+                <div class="todo-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                    <button id="clear-completed" class="clear-btn">Clear Completed</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="contact-content glass-card">
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <a href="mailto:hello@example.com" class="btn primary-btn">Say Hello <i class="fa-regular fa-paper-plane"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2026 John Doe. Built with HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
